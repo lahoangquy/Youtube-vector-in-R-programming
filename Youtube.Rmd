@@ -1,0 +1,50 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+vector is the fundamental R data structure. Vectors will store an ordered set of values called elements. A vector can contain any number of elements but all of its elements must be of the same type. For example, a vector can not contain both numbers and text. It can only contain either number or text. To determine the type of vector, we will use the typeof(v) command
+
+
+There are several vector types which will be used in macnhine learning. The first vector type is integers which are numbers without decimals, character which is text data, doubles which are nymbers with decimals and logical which are eigher True or False. 
+
+
+There are 2 major special values. The first one is NA which indicates the missing values and NULL which is the absence of any value.
+
+The vector can also be given a name using the arrow <- operator. This is R's assignment operator and it is used much like the = assignment operators in any other programming language
+
+```{r}
+subject_name <- c("John Doe", "Jane Doe", "Steve Graves")
+```
+
+subject name will store the name of the three pateints name
+
+
+
+```{r}
+temperature <- c(98.1, 98.6, 101.4)
+flu_status <-c(FALSE, TRUE,FALSE)
+```
+
+
+Values are stored in R vectors reainin their order. Therefore, the data for each patient can be accessed by using his or her position in the set, beginning at 1, and then we can supply this number in the square bracket "[]"
+
+
+```{r}
+temperature[2]
+```
+
+
+If you want to access both the number of 98.6 and 101.4 in temperature. 2 is the starting position and 3 is the end position
+
+```{r}
+temperature[2:3]
+```
+
+We can also access both the number of 98.6 and 101.4 in temperature by specifying negative item number to exclue the patient's temperature.
+
+
+```{r}
+temperature[-2]
+```
